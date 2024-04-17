@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        form {
+            margin: 30px;
+        }
+
+        input {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        ::placeholder {
+            color: #ddd;
+        }
+
+        fieldset {
+            width: 90%;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            border: 10px double black;
+        }
+
+        legend {
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border-radius: 2px;
+        }
+
+        input[type=submit],
+        input[type=reset] {
+            min-width: 100px;
+            cursor: pointer;
+        }
+
+        input[type=checkbox]:checked+span,
+        input[type=radio]:checked+span {
+            /* background-color: black; */
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="reg.php" method="get">
+        <fieldset>
+            <legend>註冊表單</legend>
+            <!-- input:text -->
+            <label for="name">姓名</label> <input type="text" name="name" id="name" placeholder="請輸入姓名" required autofocus
+                maxlength="50" minlength="2"><br>
+            <label>密碼 <input type="password" name="pass" id="pass" placeholder="您的密碼" required></label><br>
+            生日 <input type="date" name="birth" id="birth" value="2000-01-01"><br>
+            email <input type="email" name="email" id="email"><br>
+            幸運色彩 <input type="color" name="color" id="color" value="#2279F6"><br>
+            幸運號碼 <input type="number" name="number" id="number" min="0" max="120"><br>
+            性別 <label><input type="radio" name="gender" id="male" value="m"> <span>男</span></label> <label><input
+                    type="radio" name="gender" id="female" value="f" checked> <span>女</span></label> <label><input
+                    type="radio" name="gender" id="unknown" value="u"> <span>中性</span></label><br>
+            <table>
+                <tr>
+                    <td>興趣</td>
+                    <td><input type="checkbox" name="hike" id="hike" value="0"><span>爬山</span></td>
+                    <td><input type="checkbox" name="dance" id="dance" value="1"><span>跳舞</span></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><input type="checkbox" name="swim" id="swim" value="2"><span>游泳</span></td>
+                    <td><input type="checkbox" name="ride" id="ride" value="3"><span>騎車</span></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><input type="checkbox" name="sleep" id="sleep" value="4"><span>睡覺</span></td>
+                    <td><input type="checkbox" name="read" id="read" value="5"><span>看書</span></td>
+                </tr>
+            </table>
+            居住地
+            <select name="city" id="city">
+                <optgroup label="直轄市">
+                    <option value="city01">臺北市</option>
+                    <option value="city02">新北市</option>
+                    <option value="city03">桃園市</option>
+                    <option value="city04">臺中市</option>
+                    <option value="city05">臺南市</option>
+                    <option value="city06">高雄市</option>
+                </optgroup>
+                <optgroup label="一般縣市">
+                    <option value="city07">新竹縣</option>
+                    <option value="city08">苗栗縣</option>
+                    <option value="city09">彰化縣</option>
+                    <option value="city10">南投縣</option>
+                    <option value="city11">雲林縣</option>
+                    <option value="city12">嘉義縣</option>
+                    <option value="city13">屏東縣</option>
+                    <option value="city14">宜蘭縣</option>
+                    <option value="city15">花蓮縣</option>
+                    <option value="city16">臺東縣</option>
+                    <option value="city20">基隆市</option>
+                    <option value="city21">新竹市</option>
+                    <option value="city22">嘉義市</option>
+                </optgroup>
+                <optgroup label="離島縣市">
+                    <option value="city18">金門縣</option>
+                    <option value="city19">連江縣</option>
+                    <option value="city17">澎湖縣</option>
+                </optgroup>
+            </select><br>
+
+            <datalist id="broswer">
+                <option value="Internet Explorer"></option>
+                <option value="Firefox"></option>
+                <option value="Edge"></option>
+                <option value="Netscape"></option>
+                <option value="Chorme"></option>
+            </datalist>    
+            常用的瀏覽器 <input type="text" name="myBrowser" id="myBrowser" list="broswer"><br>
+            
+
+            <input type="hidden" name="level" value="basic">
+            <input type="submit" value="註冊"><input type="reset" value="清除資料">
+        </fieldset>
+    </form>
+</body>
+
+</html>

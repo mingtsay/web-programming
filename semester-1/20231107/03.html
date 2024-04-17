@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COOP Test</title>
+    <style>
+        nav {
+            display: flex;
+            flex-direction: column;
+        }
+
+        a {
+            display: block;
+        }
+
+        .undetected, .is-empty {
+            color: grey;
+        }
+
+        .is-null {
+            color: red;
+        }
+
+        .is-not-null {
+            color: green;
+        }
+
+        .is-named {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="https://www.google.com.tw" target="bb">Google</a>
+    <a href="https://tw.yahoo.com" target="bb">Yahoo</a>
+    <a href="https://mingtsay.tw/coop.php" target="bb">with header</a>
+    <a href="https://mingtsay.tw/coop.html" target="bb">without header</a>
+</nav>
+<main>
+    <div>window.name = <span class="undetected" id="window-name">(undetected)</span></div>
+    <div>window.opener <span class="undetected" id="window-opener">(undetected)</span> null</div>
+</main>
+<script>
+    const $windowName = document.getElementById('window-name')
+    const $windowOpener = document.getElementById('window-opener')
+    $windowName.textContent = window.name || '(empty)'
+    $windowName.className = window.name === '' ? 'is-empty' : 'is-named'
+    $windowOpener.textContent = window.opener === null ? 'IS' : 'IS NOT'
+    $windowOpener.className = window.opener === null ? 'is-null' : 'is-not-null'
+</script>
+</body>
+</html>

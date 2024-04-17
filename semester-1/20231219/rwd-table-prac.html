@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        table{
+            border: 3px solid black;
+            width: 1200px;
+            margin: 30px auto;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+            min-width: 100px;
+        }
+		th{
+            background-color: black;
+            color:white;
+        }
+		@media screen and (max-width:1200px){
+			table{
+				border: none;
+				width: 80%;
+			}
+			thead{
+				display: none;
+			}
+			tr{
+				display: block;
+				margin-bottom: 15px;
+				border:3px solid black;
+				border-radius: 4px;
+			}
+			td{
+				display: block;
+				border: none;
+				padding: 10px;
+			}
+			td:first-child{
+				background-color: black;
+				color:white;
+			}
+			td + td{
+				border-top: 1px solid #aaa;
+			}
+			td:not(:first-child)::before{
+				content: attr(data-text) " : ";
+				color:red;
+				font-weight: bold;
+			}
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>編號</th>
+				<th>名稱</th>
+				<th>售價</th>
+				<th>規格</th>
+				<th>說明</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td data-text="編號">Item-01</td>
+				<td data-text="名稱">DELL Inspiron 3671</td>
+				<td data-text="售價">$20900</td>
+				<td data-text="規格">九代i5獨顯電腦、內建無線網卡+藍牙</td>
+				<td data-text="說明">
+					處理器：Intel Core i5-9400、主機板晶片組：Intel® B360、記憶體：8GB DDR4 2666MHz、硬碟：1TB (7200RPM)、顯卡：NVIDIA® GeForce® GT 730 2GB DDR5、光碟機：無、作業系統：Windows 10 家用版 (64 bit)、其他：DW 1707 + BT4.0、螢幕輸出介面：HDMI、保固：三年遠端診斷後到府服務、※本機器不含螢幕傳輸線、螢幕轉接頭，請另購買、※本機器不含光碟機，商品大圖僅供參考
+				</td>
+			</tr>
+			<tr>
+				<td data-text="編號">Item-02</td>
+				<td data-text="名稱">ASUSTOR AS4004T 4Bay NAS</td>
+				<td data-text="售價">$9999</td>
+				<td data-text="規格">(UPS不斷電)[CyberPower CP650HGa]</td>
+				<td data-text="說明">
+					★延襲華碩主機板設計理念，通過嚴苛硬體測試，品質穩定值得信賴、★Marvell 1.6GHz、雙核心64-bit、Cortex-A72 處理器，提升 3.5 倍運算能力、★內建 DDR4 2GB 記憶體，快速又省電、★雙千兆網路埠 + 10GbE 網路埠，升速頻寬配置有彈性、★全新鑽石切割精緻外型，搭配磁吸防塵面板、★支援 4 顆硬碟熱插拔，單一磁區無容量限制、★卡榫固定無螺絲，免工具秒速拆裝硬碟、★享同級產品中最長保固三年
+				</td>
+			</tr>
+			<tr>
+				<td data-text="編號">Item-03</td>
+				<td data-text="名稱">CORSAIR ONE i164 Compact 電競機</td>
+				<td data-text="售價">$119900</td>
+				<td data-text="規格">i9-9900K/32GB/960G+2TB/2080 Ti/WIN10/2年保</td>
+				<td data-text="說明">
+					◆處理器：Intel Core i9-9900K、◆主機板晶片組：Z370、◆記憶體：32G (16G*2)、◆硬碟：2TB+960G M.2 NVMe、◆固態硬碟：Intel 660P 512G SSD、◆顯卡：NVIDIA GeForce RTX 2080 Ti、◆散熱系統：Liquid CPU/GPU、◆作業系統：WIN10、◆保固：2年保固、◆電源供應:Corsair SF600, 80 Plus Gold	
+				</td>
+			</tr>
+			<tr>
+				<td data-text="編號">Item-04</td>
+				<td data-text="名稱">微星B365M平台 [龍戰神] </td>
+				<td data-text="售價">$31480</td>
+				<td data-text="規格">9代i7八核RTX2060S獨顯 電競機</td>
+				<td data-text="說明">
+					處理器：Intel Core i7-9700F(2.9GHz)、主機板：微星 B365M PRO VDH、顯示卡：微星 RTX2060 Super VENTUS 8G GP OC、記憶體：16GB DDR4 2666、固態硬碟：512G M.2 SSD、電源：650W 電源供應器、作業系統：無、鍵鼠組：無、保固：3年保固(第1年免費到府收送-限台灣本島)
+				</td>
+			</tr>
+			<tr>
+				<td data-text="編號">Item-05</td>
+				<td data-text="名稱">B450平台[六都英雄] </td>
+				<td data-text="售價">$17990</td>
+				<td data-text="規格">R5四核GTX1650 電競機</td>
+				<td data-text="說明">
+					處理器：AMD Ryzen R5-2400G、主機板：B450 GAMING PLUS、顯示卡：GeForce GTX 1650 GAMING X 4G、記憶體：8GB RGB D4 2666(8G*1)、機械硬碟: 1TB HDD、固態硬碟：240GB M.2、電源：550W 電源供應器、作業系統：無、鍵鼠組：無、保固：1年
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

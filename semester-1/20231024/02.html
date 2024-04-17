@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            display: block;
+            width: 200px;
+        }
+        a:hover{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <a href="01.html">link1</a>
+    <a href="http://www.chihlee.edu.tw">連回致理</a>
+    <a href="http://www.chihlee.edu.tw" target="_blank">連回致理</a>
+    <a href="http://www.chihlee.edu.tw" target="_self">連回致理</a>
+    <a href="http://www.chihlee.edu.tw" target="_top">連回致理</a>
+    
+    <a href="http://www.google.com.tw" target="bb" title="這是連到Google">Google</a>
+    <a href="http://tw.yahoo.com" target="bb">雅虎</a>
+    <a href="#" onclick="gogoole();">連到Google(JS)</a>
+    <button onclick="gogoole();">連到Google</button>
+    <script>
+        function gogoole(){
+            window.open('http://www.google.com.tw','bb','width=500,height=400');
+        }
+    </script>
+</body>
+</html>

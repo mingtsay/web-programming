@@ -1,0 +1,24 @@
+# 期中考前筆記
+
+- clip-path 屬性 (https://bennettfeely.com/clippy/)
+- 子元素選擇器
+    - :nth-child()
+        - 2 <= 直接寫絕對 position 數字
+        - 2n, 3n+1 <= n 的公式，範例用法：可以假裝亂數顏色
+        - odd, even <= 選奇數、偶數的元素
+    - :first-child
+    - :last-child
+    - :nth-of-type() <= 同種類一起看
+- flex (https://flexbox.buildwithreact.com/)
+    - display: flex
+    - justify-content (https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)
+        - 主軸對齊: flex-start, flex-end, center
+        - 主軸排列: space-around, space-between, space-evenly
+    - align-items (https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)
+        - 交叉軸對齊: flex-start, flex-end, center
+    - 垂直水平置中大法: `display:flex;justify-content:center;align-items:center;`
+    - flex-wrap (https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)
+    - flex-direction: row, row-reverse, column, column-reverse (https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)
+    - flex-grow (https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow)
+    - flex-shrink (https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink)
+    - order (https://developer.mozilla.org/en-US/docs/Web/CSS/order)

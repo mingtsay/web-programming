@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        table{
+            border: 3px solid black;
+            width: 1200px;
+            margin: 30px auto;
+            border-collapse: collapse;
+        }
+        caption{
+            caption-side: bottom;
+            text-align: right;
+            font-size: .8em;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+            min-width: 100px;
+        }
+        tbody tr td:first-child, tbody tr td:nth-child(2){
+            text-align: center;
+        }
+        th{
+            background-color: black;
+            color:white;
+        }
+        tbody tr:nth-child(even){
+            background-color: lavender;
+        }
+        tbody tr:hover{
+            cursor: pointer;
+            background-color: tomato;
+            color:white;
+        }
+        tbody tr td[colspan="2"]{
+            text-align: center;
+            color:red;
+        }
+        .dummy{
+            display: none;
+        }
+        tbody tr td[rowspan="5"]{
+            background-color: antiquewhite;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    
+        <!-- table>tr*10>td{$$}+td{股票名稱$$}+td>lorem20 -->
+        <table>
+            <caption>資料來源：台灣前50績優潛力股 20231212</caption>
+            <thead>
+                <tr>
+                    <th>種類</th>
+                    <th>編號</th>
+                    <th>名稱</th>
+                    <th>說明</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="5">上市</td>
+                    <td>01</td>
+                    <td>股票名稱01</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nostrum nihil omnis asperiores incidunt. Officiis quaerat voluptatum enim asperiores ullam?</td>
+                </tr>
+                <tr>
+                    <td class="dummy">&nbsp;</td>
+                    <td>02</td>
+                    <td colspan="2">暫無資料</td>
+                </tr>
+                <tr>
+                    <td class="dummy">&nbsp;</td>
+                    <td>03</td>
+                    <td>股票名稱03</td>
+                    <td>Aliquam minus magnam culpa suscipit minima ab tempore, repudiandae odio, in eius iusto. Eius, ut at veritatis delectus nostrum fugit!</td>
+                </tr>
+                <tr>
+                    <td class="dummy">&nbsp;</td>
+                    <td>04</td>
+                    <td>股票名稱04</td>
+                    <td>Iste recusandae quas error, facere numquam sequi neque aspernatur debitis architecto velit saepe alias provident quo reiciendis eligendi nobis odit.</td>
+                </tr>
+                <tr>
+                   <td class="dummy">&nbsp;</td>
+                    <td>05</td>
+                    <td>股票名稱05</td>
+                    <td>Voluptates blanditiis, molestiae pariatur quaerat fugiat nemo ea veritatis quisquam nam ipsa quia? Vero placeat sed minus ipsa repellat dicta.</td>
+                </tr>
+                <tr>
+                    <td rowspan="5">上櫃</td>
+                    <td>06</td>
+                    <td>股票名稱06</td>
+                    <td>Non, porro aliquam laboriosam a aperiam, sunt iusto et ipsam quo magnam assumenda id omnis. Explicabo, eos. Tempora, voluptatum vel.</td>
+                </tr>
+                <tr>
+                    <td class="dummy">&nbsp;</td>
+                    <td>07</td>
+                    <td colspan="2">暫無資料</td>
+                </tr>
+                <tr>
+                    <td class="dummy">&nbsp;</td>
+                    <td>08</td>
+                    <td>股票名稱08</td>
+                    <td>Vitae sed iure voluptates aspernatur eligendi doloribus repellendus harum voluptatum adipisci? Blanditiis, excepturi nulla velit necessitatibus obcaecati voluptatum hic expedita!</td>
+                </tr>
+                <tr>
+                    <td class="dummy">&nbsp;</td>
+                    <td>09</td>
+                    <td>股票名稱09</td>
+                    <td>Harum fugit, nisi quod possimus at optio impedit et sed recusandae quas ullam saepe voluptatibus tenetur magnam cumque quis quasi?</td>
+                </tr>
+                <tr>
+                    <td class="dummy">&nbsp;</td>
+                    <td>10</td>
+                    <td>股票名稱10</td>
+                    <td>Cupiditate, quia eum. Quas vero assumenda saepe voluptatibus voluptas ipsa velit voluptatem quibusdam esse, hic repellat nam, optio, pariatur nisi?</td>
+                </tr>
+            </tbody>
+        </table>
+    
+</body>
+</html>

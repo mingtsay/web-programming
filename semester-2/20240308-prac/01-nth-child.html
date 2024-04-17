@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 100px;
+            height: 40px;
+            background-color: lightblue;
+            margin-bottom: 10px;
+        }
+        .box:first-child{
+            background-color: tomato;
+        }
+        .box:last-child{
+            background-color: blue;
+       }
+       .box:nth-child(3){
+            background-color: black;
+            color:white;
+       }
+    </style>
+</head>
+<body>
+    <div class="box">out-01</div>
+    <div class="box">out-02</div>
+    <div class="box">out-03</div>
+    <div class="box">out-04</div>
+    <div class="box">out-05</div>
+    <div class="box">out-06</div>
+    <div class="box">out-07</div>
+    <div class="box">out-08</div>
+    <div class="box">out-09</div>
+    <div class="box">out-10</div>
+    <!-- .box{$$}*10 -->
+    <div class="container">
+        <div class="box">01</div>
+        <div class="box">02</div>
+        <div class="box">03</div>
+        <div class="box">04</div>
+        <div class="box">05</div>
+        <div class="box">06</div>
+        <div class="box">07</div>
+        <div class="box">08</div>
+        <div class="box">09</div>
+        <div class="box">10</div>
+    </div>
+</body>
+</html>
